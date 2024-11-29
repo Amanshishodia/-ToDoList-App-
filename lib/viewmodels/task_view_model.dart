@@ -70,6 +70,7 @@ class TaskViewModel extends GetxController {
         task.title.toLowerCase().contains(searchQuery.value.toLowerCase())
     ).toList();
   }
+  //
 
   // Create a new task
   TaskModel createTask({
