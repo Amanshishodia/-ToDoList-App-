@@ -26,7 +26,7 @@ class TaskViewModel extends GetxController {
   Future<void> addTask(TaskModel task) async {
     // Schedule notification
     _notificationService.scheduleNotification(task);
-
+//
     tasks.add(task);
     await _taskService.saveTasks(tasks);
   }
