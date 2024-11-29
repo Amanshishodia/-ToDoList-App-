@@ -3,7 +3,7 @@ name: "Build & Release"
 on:
   push:
     branches:
-      - main
+      - master
 
   pull_request:
     branches:
@@ -31,9 +31,9 @@ jobs:
 
       # Build APK
       - name: Build Android APK
-        run: flutter build apk --release --split-per-abi
+        run: flutter build apk --release
 
-      #
+
 
       # Upload artifacts to GitHub releases
       - name: Push to Releases
